@@ -40,3 +40,11 @@ message IsAdminRequest {
 message IsAdminResponse {
   bool is_admin = 1; // Indicates whether the user is an admin.
 }
+
+message IsUserExistsRequest {
+  string email = 1; // Email of user to check
+}
+
+message IsUserResponse {
+  bool is_exists = 1; // Indicates whether the user is already exists
+}
