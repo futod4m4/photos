@@ -8,6 +8,7 @@ service Auth {
   rpc Register (RegisterRequest) returns (RegisterResponse);
   rpc Login (LoginRequest) returns (LoginResponse);
   rpc IsAdmin (IsAdminRequest) returns (IsAdminResponse);
+  rpc IsUserExists (IsUserExistsRequest) returns (IsUserExistsResponse);
 }
 
 message RegisterRequest {
@@ -45,6 +46,6 @@ message IsUserExistsRequest {
   string email = 1; // Email of user to check
 }
 
-message IsUserResponse {
+message IsUserExistsResponse {
   bool is_exists = 1; // Indicates whether the user is already exists
 }
