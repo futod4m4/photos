@@ -410,7 +410,7 @@ type IsUserExistsResponse struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	IsExists bool `protobuf:"varint,1,opt,name=is_exists,json=isExists,proto3" json:"is_exists,omitempty"` // Indicates whether the user is already exists
+	IsExists bool `protobuf:"varint,1,opt,name=is_exists,json=isExists,proto3" json:"is_exists,omitempty"` // Indicates whether the user is already exist
 }
 
 func (x *IsUserExistsResponse) Reset() {

@@ -47,5 +47,5 @@ message IsUserExistsRequest {
 }
 
 message IsUserExistsResponse {
-  bool is_exists = 1; // Indicates whether the user is already exists
+  bool is_exists = 1; // Indicates whether the user is already exist
 }
