@@ -15,7 +15,8 @@ message RegisterRequest {
   string password = 2; // Password of the user to register.
   string username = 3; // Username of the user to register.
   string sex = 4; // Sex of the user to register.
-  string date_of_birth = 5; // Date of birth of the user to register.
+  string location = 5;
+  string date_of_birth = 6; // Date of birth of the user to register.
 }
 
 message RegisterResponse {
